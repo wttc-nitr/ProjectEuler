@@ -24,7 +24,7 @@ void generatePrimes (void) {
 
 	for (int i = 3; i * i <= MAX; i += 2) {
 		if (primes[i]) {
-			for (int j = 3 * i; j <= MAX; j += 2 * i)
+			for (int j = i * i; j <= MAX; j += 2 * i)
 				primes[j] = 0;
 		}
 	}
